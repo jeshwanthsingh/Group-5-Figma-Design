@@ -24,8 +24,7 @@ The SFBuzz prototype adheres to a user-centric design philosophy rooted in **Joh
 
 ## 3. Screenshot of Key Screens
 
-![Key Screens Montage of SFBuzz Prototype](./images/sfbuzz-prototype-screens.jpg)
-*(Replace `./images/sfbuzz-prototype-screens.jpg` with the actual path to your combined screenshot of the 4 key screens, ideally matching the style of `d5294e17e7736fcad80f732d1e1ae1b0cb1b395f2d1632749d6350a906e89a22.jpg`)*
+
 
 ## 4. Screen Descriptions
 
@@ -37,7 +36,7 @@ The prototype encompasses four primary screens, each designed for a specific sta
     * **Orange Header:** Displays the "SFBuzz" brand and "Home" title in white, with a filter/sort icon on the right for content customization.
     * **Event Cards:** White cards with a distinctive vertical yellow accent bar on the left. Each card clearly presents:
         * Event Name (bold, black text).
-        * Brief details with icons (e.g., `🎟️ 5.2 Ite`, `👥 54 m`), potentially indicating rating/type and distance/attendees.
+        * Brief details with icons (e.g., `🎟️ 5.2 rating`, `👥 54 m`), potentially indicating rating/type and distance/attendees.
         * Subtle shadow for depth.
     * **Bottom Navigation Bar:** Orange background with three white icons:
         * **Home (Filled):** Current active screen.
@@ -50,7 +49,7 @@ The prototype encompasses four primary screens, each designed for a specific sta
     * **Orange Header:** Features a white back chevron (`‹`), a centered "Event Name" title, and a white outlined options/share icon (`○`) on the right.
     * **Information Section:** Clearly displays:
         * `📅 Date, Time`
-        * `📍 Location, Vicam` (with map preview anticipated below or via tap).
+        * `📍 Location` (with map preview anticipated below or via tap).
     * **"Vibes" Section:** Displays user-generated or event-organizer-defined vibes using expressive emoticons (e.g., 😞 🙁 😐 🙂 😄) for a quick emotional read of the event.
     * **"Tags" Section:** Features pill-shaped tags (e.g., "Student-Friendly," "Chill") with orange text on a light gray background, allowing users to quickly grasp event characteristics. The active/selected tag may have a slightly darker gray background.
     * **"Check in" Button:** A prominent button with orange text on a dark gray background, facilitating easy event check-in.
@@ -68,7 +67,7 @@ The prototype encompasses four primary screens, each designed for a specific sta
 ### 4.4. Post-Event Rating Screen
 * **Purpose:** Allows users who have attended an event to contribute to its social validation by submitting vibe ratings and tags.
 * **Key UI Elements:**
-    * **Clear Title:** "How was checked in" (or similar, like "How was the event?") prompting user feedback.
+    * **Clear Title:** "How was checked in" (or similar, like "How was the event?"), prompting user feedback.
     * **Emoticon Rating:** A horizontal array of expressive emoticons (e.g., 😞 🙁 😐 🙂 😄) for users to select their overall feeling about the event.
     * **Submit Button:** An orange button with white/dark text, enabling users to submit their rating. This feedback loop is crucial for the "social trends and crowd activity" aspect of SFBuzz.
 
@@ -85,6 +84,6 @@ The prototype encompasses four primary screens, each designed for a specific sta
 2.  **Explore:** User taps an event card to view detailed information on the **Event Detail Screen**.
 3.  **Engage:** User decides to "Check in" to the event.
 4.  **Confirm:** User receives immediate feedback on the **Check-In Confirmation Screen**.
-5.  **Contribute:** After the event (or a set duration), user is prompted to rate their experience on the **Post-Event Rating Screen**.
+5.  **Contribute:** After the event (or a set duration), the user is prompted to rate their experience on the **Post-Event Rating Screen**.
 
 This design for SFBuzz aims to provide a seamless and engaging experience for discovering and participating in San Francisco's vibrant local event scene.
