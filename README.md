@@ -16,7 +16,8 @@ The SFBuzz prototype presents a clean, modern, and user-friendly interface. Key 
 
 ## 3. Visual Summary of Key Screens
 
-*(Placeholder for a montage image or key screenshots from the prototype video. If you have screenshots, you can insert them here using Markdown image syntax: `![SFBuzz Prototype Screens](./path/to/your/image.jpg)`)*
+https://github.com/jeshwanthsingh/Group-5-Figma-Design/blob/main/Frame.png
+
 
 ## 4. Detailed Feature Breakdown & User Flow
 
