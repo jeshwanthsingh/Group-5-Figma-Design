@@ -17,7 +17,11 @@ The SFBuzz prototype presents a clean, modern, and user-friendly interface. Key 
 ## 3. Visual Summary of Key Screens
 
 https://github.com/jeshwanthsingh/Group-5-Figma-Design/blob/main/Frame.png
+https://github.com/jeshwanthsingh/Group-5-Figma-Design/blob/main/d5294e17e7736fcad80f732d1e1ae1b0cb1b395f2d1632749d6350a906e89a22.png
 
+## 3.1 Video Link redirecting to Google Drive
+
+https://drive.google.com/file/d/1DjwPPgoWYbWgv3mH5lsIlf-x7PDBAvTr/view?usp=sharing
 
 ## 4. Detailed Feature Breakdown & User Flow
 
