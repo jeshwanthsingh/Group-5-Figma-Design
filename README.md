@@ -1,89 +1,150 @@
 # Group-5-Figma-Design
-# SFBuzz Prototype Report: Design Document
+# SFBuzz Mobile Application Prototype: Video Showcase Report
 
-## 1. Project Overview
+## 1. Introduction
 
-SFBuzz is a mobile application concept meticulously designed to address the dynamic social needs of students and young residents in San Francisco. The core mission is to provide a real-time, curated guide to trending local events, moving beyond static listings by leveraging social trends and crowd-sourced activity. This enables users to spontaneously discover what's happening around them, from pop-up gatherings to popular local spots.
+This document outlines the features, user interface (UI), and user flow of the "SFBuzz" mobile application prototype, as demonstrated in a video showcase. SFBuzz is designed as a dynamic platform for discovering and interacting with local events, presumably targeted at users in San Francisco. The prototype highlights a comprehensive set of functionalities aimed at providing an engaging and seamless event navigation experience.
 
-The application aims to solve the common challenge of "event discovery fatigue" by surfacing relevant, immediate opportunities for engagement. Key functionalities include real-time event feeds, seamless check-ins, expressive vibe rating, easy sharing with friends, and event pinning for future reminders. Ultimately, SFBuzz is envisioned as an indispensable social companion for navigating and experiencing city life effortlessly and excitingly.
+## 2. Overall Design & UI Impression
 
-**Target Audience:**
-* University students in San Francisco.
-* Young professionals and residents (ages 18-30).
-* Individuals seeking spontaneous, socially validated local experiences.
+The SFBuzz prototype presents a clean, modern, and user-friendly interface. Key design characteristics observed include:
 
-## 2. Design Philosophy
+* **Consistent Color Scheme:** Predominantly uses a vibrant orange/coral for primary actions and branding, complemented by light yellow/beige accents and neutral backgrounds, ensuring good visual hierarchy and readability.
+* **Clear Navigation:** Employs standard mobile navigation patterns, including a bottom tab bar for main sections and clear back-arrow navigation within screens.
+* **Intuitive Layout:** Information is well-organized on each screen, with clear calls to action and legible typography.
+* **Interactive Feedback:** The prototype effectively simulates user interactions, providing visual feedback for actions like typing, button presses, and screen transitions.
 
-The SFBuzz prototype adheres to a user-centric design philosophy rooted in **John Maeda's Laws of Simplicity**, prioritizing clarity, efficiency, and an intuitive user experience.
+## 3. Visual Summary of Key Screens
 
-* **Clarity and Visual Hierarchy:** The design employs a clean layout with distinct visual Cues to guide the user. Information is structured logically, with prominent elements for primary actions and key information. For instance, event names and call-to-action buttons are visually emphasized.
-* **Minimal Navigation & Efficiency:** Core navigation is streamlined to three main tabs (Home, Search, Profile) on the Home Screen. Key interactions, such as checking into an event or rating its vibe, are designed as one-tap operations to minimize friction and cognitive load, ensuring users can achieve their goals quickly.
-* **Youthful & Engaging Aesthetics:** A warm and vibrant color palette, dominated by shades of **orange and coral** (specifically `#FE724C` for primary actions and headers), is used to create an energetic, approachable, and youth-friendly atmosphere. These colors are also chosen for their high contrast and readability, ensuring accessibility. Accents of bright **yellow** (`#FFC529`) are used on event cards to draw attention to key event markers.
-* **Consistency:** A consistent design language (typography, iconography, button styles, card layouts) is applied across all screens to create a cohesive and predictable user experience, making the app easier to learn and use.
-* **Feedback & Responsiveness:** The design incorporates immediate visual feedback for user actions, such as the check-in confirmation screen, reinforcing user interactions and building confidence.
+*(Placeholder for a montage image or key screenshots from the prototype video. If you have screenshots, you can insert them here using Markdown image syntax: `![SFBuzz Prototype Screens](./path/to/your/image.jpg)`)*
 
-## 3. Screenshot of Key Screens
+## 4. Detailed Feature Breakdown & User Flow
 
+The prototype showcases the following core features and user interactions:
 
+### 4.1. Home Screen (Main Event Feed)
 
-## 4. Screen Descriptions
+The primary landing screen for event discovery.
 
-The prototype encompasses four primary screens, each designed for a specific stage of the user journey:
-
-### 4.1. Home Screen
-* **Purpose:** Provides a dynamic, real-time feed of trending local events, acting as the primary discovery hub.
-* **Key UI Elements:**
-    * **Orange Header:** Displays the "SFBuzz" brand and "Home" title in white, with a filter/sort icon on the right for content customization.
-    * **Event Cards:** White cards with a distinctive vertical yellow accent bar on the left. Each card clearly presents:
-        * Event Name (bold, black text).
-        * Brief details with icons (e.g., `🎟️ 5.2 rating`, `👥 54 m`), potentially indicating rating/type and distance/attendees.
-        * Subtle shadow for depth.
-    * **Bottom Navigation Bar:** Orange background with three white icons:
-        * **Home (Filled):** Current active screen.
-        * **Search (Outline):** For specific event lookups.
-        * **Profile (Outline):** For user-specific information and settings.
+* **Header:**
+    * Displays the application title: **"SFBuzz"**.
+    * Current page title: **"Home"**.
+    * A **"Search..."** bar with a magnifying glass icon for initiating event searches.
+* **Event Listings:**
+    * A vertically scrollable feed of events.
+    * Each event is presented as a distinct card, featuring:
+        * **Category Tag:** A colored rectangular tag on the left side of the card (e.g., "Sunset," "North," "Park," "Tech," "Yoga," "SF"), visually categorizing the event.
+        * **Event Title:** Clearly displayed (e.g., "Sunset Farmer's Market," "North Beach Beer Crawl").
+        * **Key Details:** Small icons and accompanying text provide quick information such as:
+            * Duration (e.g., "3 hours").
+            * Time or specific attribute (e.g., "8pm," "21+," "Volunteer," "Networking," "Wellness," "Art").
+        * **Progress/Time Bar (Implied):** A faint horizontal bar below the title, possibly indicating event progress or time remaining (its exact function is not explicitly detailed in the video description).
+* **Bottom Navigation Bar:**
+    * Provides access to the app's main sections with three icons:
+        * **Home:** (Selected by default) Returns to this event feed.
+        * **Messages/Chat:** Navigates to the messaging feature.
+        * **Profile/Account:** Opens the user's account section.
 
 ### 4.2. Event Detail Screen
-* **Purpose:** Offers comprehensive information about a selected event, enabling users to make informed decisions and engage further.
-* **Key UI Elements:**
-    * **Orange Header:** Features a white back chevron (`‹`), a centered "Event Name" title, and a white outlined options/share icon (`○`) on the right.
-    * **Information Section:** Clearly displays:
-        * `📅 Date, Time`
-        * `📍 Location` (with map preview anticipated below or via tap).
-    * **"Vibes" Section:** Displays user-generated or event-organizer-defined vibes using expressive emoticons (e.g., 😞 🙁 😐 🙂 😄) for a quick emotional read of the event.
-    * **"Tags" Section:** Features pill-shaped tags (e.g., "Student-Friendly," "Chill") with orange text on a light gray background, allowing users to quickly grasp event characteristics. The active/selected tag may have a slightly darker gray background.
-    * **"Check in" Button:** A prominent button with orange text on a dark gray background, facilitating easy event check-in.
-    * **Home Indicator:** A subtle black horizontal line at the bottom, common in modern gesture-based mobile UIs.
 
-### 4.3. Check-In Confirmation Screen
-* **Purpose:** Provides immediate visual confirmation to the user upon successfully checking into an event.
-* **Key UI Elements:**
-    * **Full-Screen Teal Background:** Creates a distinct, positive feedback state.
-    * **Centered Content:**
-        * "Checked In!" title (bold, dark text).
-        * Supporting text: "You have checked in to the event."
-        * "OK" button (white background, dark text, subtle border) to dismiss the confirmation.
+Provides comprehensive information about a specific event.
 
-### 4.4. Post-Event Rating Screen
-* **Purpose:** Allows users who have attended an event to contribute to its social validation by submitting vibe ratings and tags.
-* **Key UI Elements:**
-    * **Clear Title:** "How was checked in" (or similar, like "How was the event?"), prompting user feedback.
-    * **Emoticon Rating:** A horizontal array of expressive emoticons (e.g., 😞 🙁 😐 🙂 😄) for users to select their overall feeling about the event.
-    * **Submit Button:** An orange button with white/dark text, enabling users to submit their rating. This feedback loop is crucial for the "social trends and crowd activity" aspect of SFBuzz.
+* **Access:** Users navigate to this screen by tapping an event card on the Home screen.
+* **Header:**
+    * **Back Arrow:** Allows users to return to the previous screen (Home screen).
+    * **Event Title:** Displays the name of the selected event.
+* **Content (Scrollable Area):**
+    * **Date & Time:** Clearly displayed with associated calendar and clock icons (e.g., "Sat, Jun 15," "4:00 PM - 7:00 PM").
+    * **Location:** Shown with a location pin icon (e.g., "Sunset Blvd, SF").
+    * **Description:** A paragraph providing detailed information about the event.
+    * **Vibes:** A row of five emoji faces (ranging from sad to happy), likely representing aggregated user feedback or the intended atmosphere of the event.
+    * **Tags:** Pill-shaped, clickable tags relevant to the event (e.g., "Food," "Market," "Family" for the Farmer's Market; "Drinks," "Social," "21+" for the Beer Crawl).
+    * **Organizer:** Displays the name of the event organizer (e.g., "SF Markets," "SF Brew Tours").
+    * **Check In Button:** A prominent button allowing users to check into the event.
 
-## 5. Key Design Goals & User Flow Highlights
+### 4.3. Search Functionality
 
-**Key Design Goals:**
-* **Effortless Discovery:** Enable users to find relevant events with minimal effort.
-* **Real-Time Relevance:** Prioritize events that are currently trending or popular.
-* **Social Engagement:** Encourage check-ins, vibe ratings, and sharing to build a community-driven platform.
-* **Intuitive Interaction:** Ensure the app is easy to learn and delightful to use.
+Enables users to find specific events.
 
-**Core User Flow (as depicted in prototype screens):**
-1.  **Discover:** User browses trending events on the **Home Screen**.
-2.  **Explore:** User taps an event card to view detailed information on the **Event Detail Screen**.
-3.  **Engage:** User decides to "Check in" to the event.
-4.  **Confirm:** User receives immediate feedback on the **Check-In Confirmation Screen**.
-5.  **Contribute:** After the event (or a set duration), the user is prompted to rate their experience on the **Post-Event Rating Screen**.
+* **Access:** Initiated by tapping the search bar on the Home screen.
+* **Search Screen UI:**
+    * **Header:**
+        * **Back Arrow:** To navigate back to the Home screen.
+        * **Title:** "Search".
+    * **Search Input Field:** A larger search bar with the placeholder text "Search events, tags, locations...".
+    * **Tag Suggestions:**
+        * Label: "Try searching by tags:"
+        * A list of clickable common tags (e.g., Food, Tech, Art, Fitness, Volunteer) to facilitate quick searches.
+* **Live Search Results & Interaction:**
+    * **Dynamic Filtering:** As the user types into the search input (e.g., "park," "tech," "fitnes"), the event list displayed below filters in real-time to show matching results.
+    * **Tag-Based Filtering:** Clicking a suggested tag (e.g., "Fitness") filters the event list accordingly.
+    * **Navigation:** Tapping a search result card navigates the user to the respective Event Detail screen.
 
-This design for SFBuzz aims to provide a seamless and engaging experience for discovering and participating in San Francisco's vibrant local event scene.
+### 4.4. Messages/Chat Feature
+
+Allows users to communicate, likely with event organizers.
+
+* **Access:** Via the middle "Messages/Chat" icon in the bottom navigation bar.
+* **Messages List Screen:**
+    * **Header:**
+        * Title: "Messages".
+        * Subtext: "Chat with event organizers."
+    * **Search Bar:** Placeholder "Search organizers..." for filtering chat list.
+    * **List of Chats:**
+        * Displays existing conversations, presumably with event organizers (e.g., "SF Markets," "SF Brew Tours," "SF Wellness Collective").
+        * Each chat entry typically shows an initial/icon, the organizer's name, and a subtext like "Event Organizer."
+        * The list filters dynamically as the user types in the search bar (e.g., typing "well" filters to show "SF Wellness Collective").
+* **Individual Chat Screen:**
+    * **Access:** By tapping an organizer's entry from the Messages List screen.
+    * **Header:**
+        * **Back Arrow:** To return to the Messages List.
+        * **Organizer Name:** The name of the event organizer.
+        * **Subtext:** "Event Organizer."
+    * **Chat Interface:**
+        * **Organizer Messages:** Displayed left-aligned, typically in white chat bubbles (e.g., "Hello! I'm the organizer for this event. How can I help you?").
+        * **User Message Input:** A text field with "Type a message..." placeholder and a send icon (paper plane).
+        * **User Messages:** Appear right-aligned, showcased in orange chat bubbles.
+        * **Timestamps:** Visible for messages, indicating when they were sent or received.
+        * The prototype simulates receiving replies from organizers, demonstrating a two-way conversation flow.
+
+### 4.5. My Account Section
+
+Manages user-specific information and settings.
+
+* **Access:** Via the rightmost "Profile/Account" icon in the bottom navigation bar.
+* **My Account Screen:**
+    * **Header:** Title "My Account."
+    * **User Information Display:**
+        * A circular avatar, possibly with user initials (e.g., "JD").
+        * Full Name (e.g., "Jane Doe").
+        * Email (e.g., "jane.doe@example.com").
+    * **Account Management Options (List Format):**
+        * "Edit Profile" (associated with a pencil icon).
+        * "Change Password" (associated with a key icon).
+        * "Delete Account" (associated with a trash can icon, text possibly in red to indicate a critical action).
+* **Edit Profile Screen:**
+    * **Header:** Back arrow, "Edit Profile."
+    * **Input Fields:** Shows fields for Full Name, Email, and Phone Number, pre-filled with existing user data. The prototype demonstrates the capability to input text into these fields.
+    * **Action Buttons:** "Cancel" and "Save Changes." (The video description notes that the prototype doesn't fully simulate saving changes but demonstrates input.)
+* **Change Password Screen:**
+    * **Header:** Back arrow, "Change Password."
+    * **Input Fields:**
+        * Current Password
+        * New Password
+        * Confirm New Password
+        * Each password field includes a show/hide toggle icon. The prototype shows dots being typed, indicating masked password input.
+    * **Action Buttons:** "Cancel" and "Update Password."
+* **Delete Account Screen:**
+    * **Header:** Back arrow, "Delete Account."
+    * **Warning Message:** A prominent message emphasizing the permanent nature of account deletion.
+    * **Confirmation Steps:**
+        * Requires the user to type the word "delete" into a designated text field.
+        * Requires the user to check a box labeled "I understand that this action cannot be undone."
+    * **Action Buttons:**
+        * "Cancel."
+        * "Delete Account" (button becomes active, possibly turning red, once all confirmation conditions are met).
+    * **Outcome:** Upon confirming and clicking "Delete Account," the prototype navigates the user back to the Home screen, implying the account deletion process is complete.
+
+## 5. Conclusion
+
+The SFBuzz prototype effectively showcases a robust and intuitive mobile application concept for event discovery and engagement. The demonstrated features cover the entire user journey from finding events and getting details to interacting with organizers and managing personal account settings. The design is visually appealing and follows established mobile UI/UX conventions, suggesting a strong foundation for a user-friendly application.
